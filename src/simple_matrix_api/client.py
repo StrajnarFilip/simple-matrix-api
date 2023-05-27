@@ -39,8 +39,10 @@ class Client:
     def send_message_text(self, room_id: str, message: str):
         self._send_message(room_id, {"body": message, "msgtype": "m.text"})
 
-    def get_file(self, file_url: str,
-                 file_save_path: Union[str, None] = None) -> Union[bytes, None]:
+    def get_file(
+            self,
+            file_url: str,
+            file_save_path: Union[str, None] = None) -> Union[bytes, None]:
         file_path: str = urlparse(file_url).path
         file_hostname: Union[str, None] = urlparse(file_url).hostname
 

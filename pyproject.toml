@@ -24,12 +24,14 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  "requests"
+]
 
 [project.urls]
-Documentation = "https://github.com/unknown/simple-matrix-api#readme"
-Issues = "https://github.com/unknown/simple-matrix-api/issues"
-Source = "https://github.com/unknown/simple-matrix-api"
+Documentation = "https://github.com/StrajnarFilip/simple-matrix-api"
+Issues = "https://github.com/StrajnarFilip/simple-matrix-api"
+Source = "https://github.com/StrajnarFilip/simple-matrix-api"
 
 [tool.hatch.version]
 path = "src/simple_matrix_api/__about__.py"
